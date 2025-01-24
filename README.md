@@ -1,13 +1,10 @@
-Here’s the markdown for your GitHub project:
-
-```markdown
-# Password Manager
+# **Password Manager in Python**
 
 A simple and secure password manager built with Python and SQLite. This application allows you to store, retrieve, and manage your passwords for various apps and websites. The project is Dockerized for easy deployment and consistent execution across environments.
 
 ---
 
-## Features
+## **Features**
 - **Store Passwords:** Save app names, URLs, usernames, and passwords securely.
 - **Retrieve Passwords:** Find passwords by app name or username.
 - **Encryption:** Passwords are encrypted before being stored in the database.
@@ -16,7 +13,7 @@ A simple and secure password manager built with Python and SQLite. This applicat
 
 ---
 
-## Technologies Used
+## **Technologies Used**
 - **Python:** Core programming language.
 - **SQLite:** Lightweight database for storing password information.
 - **Cryptography:** Library for encrypting and decrypting sensitive data.
@@ -24,7 +21,7 @@ A simple and secure password manager built with Python and SQLite. This applicat
 
 ---
 
-## Prerequisites
+## **Prerequisites**
 Before running the project, ensure you have the following installed:
 - **Python 3.9 or higher**
 - **Docker** (optional, for containerized execution)
@@ -32,28 +29,27 @@ Before running the project, ensure you have the following installed:
 
 ---
 
-## Setup Instructions
+## **Setup Instructions**
 
-### 1. Clone the Repository
+### **1. Clone the Repository**
 ```bash
 git clone git@github.com:behtash-fani/passmanger.git
 cd passmanger
 ```
 
-### 2. Install Dependencies
+### **2. Install Dependencies**
 Install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the Application
-**Without Docker**  
-Run the app directly with:
+### **3. Run the Application**
+#### **Without Docker**
 ```bash
 python password_manager.py
 ```
 
-**With Docker**  
+#### **With Docker**
 1. Build the Docker image:
    ```bash
    docker-compose build
@@ -65,17 +61,16 @@ python password_manager.py
 
 ---
 
-## Usage
+## **Usage**
 Once the application is running, you'll see a menu with the following options:
-
-- **Save Account Information:** Enter app name, URL, username, and password to store your credentials.
-- **Find Accounts by Username:** Retrieve all accounts associated with a specific username.
-- **Find Password by App Name:** Retrieve the password for a specific app or website.
-- **Exit:** Quit the application.
+1. **Save Account Information:** Enter app name, URL, username, and password to store your credentials.
+2. **Find Accounts by Username:** Retrieve all accounts associated with a specific username.
+3. **Find Password by App Name:** Retrieve the password for a specific app or website.
+4. **Exit:** Quit the application.
 
 ---
 
-## Project Structure
+## **Project Structure**
 ```
 password_manager/
 ├── database/               # Database management module
@@ -93,14 +88,13 @@ password_manager/
 
 ---
 
-## Encryption
-Passwords are encrypted using the `cryptography` library before being stored in the database. The encryption key is generated automatically and stored in memory. For production use, ensure the encryption key is securely managed.
+## **Encryption**
+Passwords are encrypted using the `cryptography` library before being stored in the database. The encryption key is generated automatically and stored in memory. **For production use, ensure the encryption key is securely managed.**
 
 ---
 
-## Contributing
+## **Contributing**
 Contributions are welcome! If you'd like to contribute, please follow these steps:
-
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix.
 3. Commit your changes.
@@ -108,17 +102,19 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 
 ---
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## **License**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Contact
-For questions or feedback, feel free to reach out:
+## **Acknowledgments**
+- Thanks to the Python community for awesome libraries and tools.
+- Inspired by the need for a simple, secure, and open-source password manager.
 
+---
+
+## **Contact**
+For questions or feedback, feel free to reach out:
 - **Behtash Fani**  
 - GitHub: [behtash-fani](https://github.com/behtash-fani)  
-- Email: behtash.fani@gmail.com
-```
-
-This should look great on your GitHub project page!
+- Email: [behtash.fani@gmail.com](mailto:behtash.fani@gmail.com)
