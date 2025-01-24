@@ -1,13 +1,19 @@
 from menu import menu, store_password, find_all, find
 
-choice = menu()
-while choice != 'q':
-    if choice == '1':
-        store_password()
-    if choice == '2':
-        find_all()
-    if choice == '3':
-        find()
-    else:
+def main():
+    while True:
         choice = menu()
-exit()
+        if choice == '1':
+            store_password()
+        elif choice == '2':
+            find_all()
+        elif choice == '3':
+            find()
+        elif choice == 'q':
+            print("Exiting the password manager. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()

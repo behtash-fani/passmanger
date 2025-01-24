@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  password_manager:
+    build: .
+    container_name: password_manager
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container
+    stdin_open: true  # Keep STDIN open for interactive input
+    tty: true  # Allocate a pseudo-TTY for the container
